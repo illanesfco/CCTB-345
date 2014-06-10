@@ -35,7 +35,9 @@ namespace NorthwindSystem.BLL
         {
             using (var context = new NWContext())
             {
-                var result = context.Regions.Include(item => item.Territories).OrderBy(item => item.RegionDescription);
+                var result = context.Regions // for all regions
+                                .Include(item => item.Territories) // include each item in the region
+                                .OrderBy(item => item.RegionDescription); // sort by region description
                 return result.ToList();
             }
         }
