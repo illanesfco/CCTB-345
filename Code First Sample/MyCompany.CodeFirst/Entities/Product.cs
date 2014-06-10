@@ -11,7 +11,11 @@ namespace MyCompany.CodeFirst.Entities
     {
         [Key]
         public int ProductId { get; set; }
+        [Required]
+        [StringLength(75)]
         public string Description { get; set; }
+        [Required(ErrorMessage="Product Name is required"), 
+            StringLength(25, MinimumLength=5, ErrorMessage="Product names are between 5 and 25 characters in length")]
         public string Name { get; set; }
 
         // Navigation Properties

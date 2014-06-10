@@ -15,6 +15,12 @@ namespace MyCompany.CodeFirst.Entities
         public int OrderId { get; set; }
         public int ProductId { get; set; }
 
+        //Constructor
+        public LineItem()
+        {
+            Quantity = 1; // Any default values are best to set in the constructor
+        }
+
         // Navigation Properties
         public virtual Order Order { get; set; }
         public virtual Product Product { get; set; }

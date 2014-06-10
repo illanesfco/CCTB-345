@@ -12,6 +12,7 @@ namespace MyCompanyCommandPrompt
     {
         static void Main(string[] args)
         {
+            List<Order> stuff;
             // The using statement here ensures that the SalesContext object is properly disposed of in the event of an exception
             // NOTE: Since SalesContext inherits from DbContext, we need to add a NuGet reference to Entity Framework
             using (SalesContext context = new SalesContext())
