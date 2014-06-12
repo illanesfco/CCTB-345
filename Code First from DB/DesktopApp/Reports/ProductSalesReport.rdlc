@@ -6,10 +6,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.64583in</Width>
+              <Width>1.36458in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.59375in</Width>
+              <Width>1.32292in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -1978,7 +1978,7 @@
         </TablixRowHierarchy>
         <DataSetName>ProductSalesDataSet</DataSetName>
         <Height>1.25in</Height>
-        <Width>12.23958in</Width>
+        <Width>11.6875in</Width>
         <Style>
           <Border>
             <Style>None</Style>
