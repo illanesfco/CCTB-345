@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesktopApp.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,6 +65,14 @@ namespace DesktopApp
             theForm.WindowState = FormWindowState.Maximized;
             theForm.Show(); // we do NOT pause here as we show the form...
             // MessageBox.Show("Here's the ViewShippers form!");
+        }
+
+        private void productSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProductSalesForm myForm = new ProductSalesForm();
+            myForm.MdiParent = this;
+            myForm.WindowState = FormWindowState.Maximized;
+            myForm.Show();
         }
     }
 }

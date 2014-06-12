@@ -10,7 +10,7 @@ using System.Data.Entity; // for some of the EF extension methods
 namespace NorthwindSystem.BLL
 {
     // This is the primary public access into the NorthwindSystem's data 
-    public class NorthwindManager
+    public partial class NorthwindManager
     {
         #region Shippers
         public Shipper GetShipper(int shipperId)
